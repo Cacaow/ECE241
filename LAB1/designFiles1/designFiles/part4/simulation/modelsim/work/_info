@@ -1,0 +1,50 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/University/Year 2/ECE241/fake_fpga/LABS/LAB1/designFiles1/designFiles/part4/simulation/modelsim
+vpart4
+!s110 1790182509
+!i10b 1
+!s100 OAB<an_fA<BPYI^^6h=S:1
+InAkIn?Qcfn8m@m1`=A7?42
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1790182474
+8main.vo
+Fmain.vo
+L0 31
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1790182508.000000
+!s107 main.vo|
+!s90 main.vo|
+!i113 1
+Z3 tCvgOpt 0
+vtb
+!s110 1790182672
+!i10b 1
+!s100 OKhdkNK:n^8;ao8^7;^Ko0
+ISLkcO2AC6@45cGc:YcZDK1
+R1
+R0
+w1779637825
+8tb.v
+Ftb.v
+L0 6
+R2
+r1
+!s85 0
+31
+!s108 1790182672.000000
+!s107 tb.v|
+!s90 tb.v|
+!i113 1
+R3
