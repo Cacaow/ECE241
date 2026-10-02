@@ -1,0 +1,65 @@
+# Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do main_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/University/Year\ 2/ECE241/fake_fpga/LABS/LAB2/Part3 {C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part3/main.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:29:55 on Oct 02,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part3" C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part3/main.v 
+# -- Compiling module main
+# -- Compiling module full_adder
+# -- Compiling module top_module
+# 
+# Top level modules:
+# 	main
+# End time: 01:29:55 on Oct 02,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim rtl_work.full_adder
+# vsim rtl_work.full_adder 
+# Start time: 01:31:01 on Oct 02,2026
+# Loading rtl_work.full_adder
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+wave create -pattern none -portmode input -language vlog /main/CLOCK_50
+# Editable Wave items are not compatible with the wave window's standard undo-redo.  Standard undo-redo has been disabled.
+# main
+wave create -pattern none -portmode input -language vlog -range 9 0 /main/SW
+# main
+wave create -pattern none -portmode input -language vlog -range 3 0 /main/KEY
+# main
+wave create -pattern none -portmode output -language vlog -range 6 0 /main/HEX0
+# main
+wave create -pattern none -portmode output -language vlog -range 6 0 /main/HEX1
+# main
+wave create -pattern none -portmode output -language vlog -range 6 0 /main/HEX2
+# main
+wave create -pattern none -portmode output -language vlog -range 6 0 /main/HEX3
+# main
+wave create -pattern none -portmode output -language vlog -range 6 0 /main/HEX4
+# main
+wave create -pattern none -portmode output -language vlog -range 6 0 /main/HEX5
+# main
+wave create -pattern none -portmode output -language vlog -range 9 0 /main/LEDR
+# main
+wave create -pattern none -portmode output -language vlog -range 7 0 /main/x
+# main
+wave create -pattern none -portmode output -language vlog -range 6 0 /main/y
+# main
+wave create -pattern none -portmode output -language vlog -range 2 0 /main/colour
+# main
+wave create -pattern none -portmode output -language vlog /main/plot
+# main
+wave create -pattern none -portmode output -language vlog /main/vga_resetn
+# main
+add wave -position insertpoint  \
+sim:/full_adder/a
+# End time: 01:35:03 on Oct 02,2026, Elapsed time: 0:04:02
+# Errors: 0, Warnings: 0

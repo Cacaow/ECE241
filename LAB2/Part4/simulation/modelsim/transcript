@@ -1,0 +1,30 @@
+# vsim -pli "fakefpga.vpi" "+nowarn3116" -c -t 1ps -L cyclonev_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver tb -voptargs="+acc" -do "run -all" 
+# Start time: 02:22:00 on Oct 02,2026
+# Loading work.tb
+# Loading work.part4
+# Loading work.top_module
+# Loading work.full_adder_3
+# Loading cyclonev_ver.cyclonev_lcell_comb
+# Loading work.full_adder_2
+# Loading work.full_adder_1
+# Loading work.full_adder
+# Loading work.seg7_3
+# Loading work.seg7_2
+# Loading work.seg7
+# Loading cyclonev_ver.cyclonev_io_ibuf
+# Loading cyclonev_ver.cyclonev_io_obuf
+# Loading ./fakefpga.vpi
+# run -all
+# Time scaling: 0.0001 sim seconds per real-time second
+# 
+# 
+# Connected to server!
+# Unrecognized command: [Server]. Ignoring...
+# Could not read network data: An existing connection was forcibly closed by the remote host.
+# 
+# ** Note: $finish    : tb.v(19)
+#    Time: 106555305 ns  Iteration: 1  Instance: /tb
+# 
+# Quitting...
+# End time: 02:39:46 on Oct 02,2026, Elapsed time: 0:17:46
+# Errors: 0, Warnings: 0

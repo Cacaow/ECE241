@@ -1,0 +1,179 @@
+# Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do main_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/University/Year\ 2/ECE241/fake_fpga/LABS/LAB2/Part2 {C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/part2.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:47:35 on Oct 02,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2" C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/part2.v 
+# -- Compiling module part2
+# -- Compiling module seg7
+# 
+# Top level modules:
+# 	part2
+# End time: 01:47:35 on Oct 02,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim rtl_work.part2
+# vsim rtl_work.part2 
+# Start time: 01:47:45 on Oct 02,2026
+# Loading rtl_work.part2
+# Loading rtl_work.seg7
+add wave -position insertpoint  \
+sim:/part2/M
+add wave -position insertpoint  \
+sim:/part2/z
+add wave -position insertpoint  \
+sim:/part2/A
+run
+vsim rtl_work.part2
+# End time: 01:51:58 on Oct 02,2026, Elapsed time: 0:04:13
+# Errors: 0, Warnings: 0
+# vsim rtl_work.part2 
+# Start time: 01:51:58 on Oct 02,2026
+# Loading rtl_work.part2
+# Loading rtl_work.seg7
+add wave -position insertpoint  \
+sim:/part2/z
+add wave -position insertpoint  \
+sim:/part2/M
+add wave -position insertpoint  \
+sim:/part2/A
+run 100ns
+vlog -reportprogress 300 -work work {C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/simulation/modelsim/testbench.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:55:25 on Oct 02,2026
+# vlog -reportprogress 300 -work work C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/simulation/modelsim/testbench.v 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 01:55:25 on Oct 02,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+quit-sim
+# invalid command name "quit-sim"
+quit -sim
+# End time: 01:55:54 on Oct 02,2026, Elapsed time: 0:03:56
+# Errors: 1, Warnings: 0
+vsim rtl_work.testbench
+# vsim rtl_work.testbench 
+# Start time: 01:56:05 on Oct 02,2026
+# Loading rtl_work.testbench
+# Loading rtl_work.part2
+# Loading rtl_work.seg7
+# ** Warning: (vsim-3017) C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/simulation/modelsim/testbench.v(24): [TFMPC] - Too few port connections. Expected 15, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/U1 File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/part2.v
+# ** Warning: (vsim-3015) C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/simulation/modelsim/testbench.v(24): [PCDPC] - Port size (1) does not match connection size (4) for port 'CLOCK_50'. The port definition is at: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/part2.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/U1 File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/part2.v
+# ** Warning: (vsim-3015) C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/simulation/modelsim/testbench.v(24): [PCDPC] - Port size (10) does not match connection size (7) for port 'SW'. The port definition is at: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/part2.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/U1 File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/part2.v
+# ** Warning: (vsim-3015) C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/simulation/modelsim/testbench.v(24): [PCDPC] - Port size (4) does not match connection size (7) for port 'KEY'. The port definition is at: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/part2.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/U1 File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/part2.v
+# ** Warning: (vsim-3722) C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/simulation/modelsim/testbench.v(24): [TFMPC] - Missing connection for port 'HEX0'.
+# ** Warning: (vsim-3722) C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/simulation/modelsim/testbench.v(24): [TFMPC] - Missing connection for port 'HEX1'.
+# ** Warning: (vsim-3722) C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/simulation/modelsim/testbench.v(24): [TFMPC] - Missing connection for port 'HEX2'.
+# ** Warning: (vsim-3722) C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/simulation/modelsim/testbench.v(24): [TFMPC] - Missing connection for port 'HEX3'.
+# ** Warning: (vsim-3722) C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/simulation/modelsim/testbench.v(24): [TFMPC] - Missing connection for port 'HEX4'.
+# ** Warning: (vsim-3722) C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/simulation/modelsim/testbench.v(24): [TFMPC] - Missing connection for port 'HEX5'.
+# ** Warning: (vsim-3722) C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/simulation/modelsim/testbench.v(24): [TFMPC] - Missing connection for port 'LEDR'.
+# ** Warning: (vsim-3722) C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/simulation/modelsim/testbench.v(24): [TFMPC] - Missing connection for port 'x'.
+# ** Warning: (vsim-3722) C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/simulation/modelsim/testbench.v(24): [TFMPC] - Missing connection for port 'y'.
+# ** Warning: (vsim-3722) C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/simulation/modelsim/testbench.v(24): [TFMPC] - Missing connection for port 'colour'.
+# ** Warning: (vsim-3722) C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/simulation/modelsim/testbench.v(24): [TFMPC] - Missing connection for port 'plot'.
+# ** Warning: (vsim-3722) C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/simulation/modelsim/testbench.v(24): [TFMPC] - Missing connection for port 'vga_resetn'.
+# Load canceled
+vsim rtl_work.testbench
+# End time: 01:56:34 on Oct 02,2026, Elapsed time: 0:00:29
+# Errors: 1, Warnings: 16
+# vsim rtl_work.testbench 
+# Start time: 01:56:34 on Oct 02,2026
+# Loading rtl_work.testbench
+# Loading rtl_work.part2
+# Loading rtl_work.seg7
+# ** Warning: (vsim-3017) C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/simulation/modelsim/testbench.v(24): [TFMPC] - Too few port connections. Expected 15, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/U1 File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/part2.v
+# ** Warning: (vsim-3015) C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/simulation/modelsim/testbench.v(24): [PCDPC] - Port size (1) does not match connection size (4) for port 'CLOCK_50'. The port definition is at: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/part2.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/U1 File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/part2.v
+# ** Warning: (vsim-3015) C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/simulation/modelsim/testbench.v(24): [PCDPC] - Port size (10) does not match connection size (7) for port 'SW'. The port definition is at: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/part2.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/U1 File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/part2.v
+# ** Warning: (vsim-3015) C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/simulation/modelsim/testbench.v(24): [PCDPC] - Port size (4) does not match connection size (7) for port 'KEY'. The port definition is at: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/part2.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/U1 File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/part2.v
+# ** Warning: (vsim-3722) C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/simulation/modelsim/testbench.v(24): [TFMPC] - Missing connection for port 'HEX0'.
+# ** Warning: (vsim-3722) C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/simulation/modelsim/testbench.v(24): [TFMPC] - Missing connection for port 'HEX1'.
+# ** Warning: (vsim-3722) C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/simulation/modelsim/testbench.v(24): [TFMPC] - Missing connection for port 'HEX2'.
+# ** Warning: (vsim-3722) C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/simulation/modelsim/testbench.v(24): [TFMPC] - Missing connection for port 'HEX3'.
+# ** Warning: (vsim-3722) C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/simulation/modelsim/testbench.v(24): [TFMPC] - Missing connection for port 'HEX4'.
+# ** Warning: (vsim-3722) C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/simulation/modelsim/testbench.v(24): [TFMPC] - Missing connection for port 'HEX5'.
+# ** Warning: (vsim-3722) C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/simulation/modelsim/testbench.v(24): [TFMPC] - Missing connection for port 'LEDR'.
+# ** Warning: (vsim-3722) C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/simulation/modelsim/testbench.v(24): [TFMPC] - Missing connection for port 'x'.
+# ** Warning: (vsim-3722) C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/simulation/modelsim/testbench.v(24): [TFMPC] - Missing connection for port 'y'.
+# ** Warning: (vsim-3722) C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/simulation/modelsim/testbench.v(24): [TFMPC] - Missing connection for port 'colour'.
+# ** Warning: (vsim-3722) C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/simulation/modelsim/testbench.v(24): [TFMPC] - Missing connection for port 'plot'.
+# ** Warning: (vsim-3722) C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/simulation/modelsim/testbench.v(24): [TFMPC] - Missing connection for port 'vga_resetn'.
+add wave -position insertpoint  \
+sim:/testbench/SW
+add wave -position insertpoint  \
+sim:/testbench/HEX1
+add wave -position insertpoint  \
+sim:/testbench/HEX0
+run 100ns
+wave zoom full
+# {0 ps} {105 ns}
+vlog -vlog01compat -work work {+incdir+C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2} {C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/part2.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:01:52 on Oct 02,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2" C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/part2.v 
+# -- Compiling module part2
+# -- Compiling module seg7
+# 
+# Top level modules:
+# 	part2
+# End time: 02:01:52 on Oct 02,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work {+incdir+C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2} {C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/part2.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:02:02 on Oct 02,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2" C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/part2.v 
+# -- Compiling module part2
+# -- Compiling module seg7
+# 
+# Top level modules:
+# 	part2
+# End time: 02:02:02 on Oct 02,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f
+# Loading rtl_work.part2
+# Loading rtl_work.seg7
+# ** Warning: (vsim-3017) C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/simulation/modelsim/testbench.v(24): [TFMPC] - Too few port connections. Expected 15, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/U1 File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/part2.v
+# ** Warning: (vsim-3015) C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/simulation/modelsim/testbench.v(24): [PCDPC] - Port size (1) does not match connection size (4) for port 'CLOCK_50'. The port definition is at: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/part2.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/U1 File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/part2.v
+# ** Warning: (vsim-3015) C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/simulation/modelsim/testbench.v(24): [PCDPC] - Port size (10) does not match connection size (7) for port 'SW'. The port definition is at: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/part2.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/U1 File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/part2.v
+# ** Warning: (vsim-3015) C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/simulation/modelsim/testbench.v(24): [PCDPC] - Port size (4) does not match connection size (7) for port 'KEY'. The port definition is at: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/part2.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/U1 File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/part2.v
+# ** Warning: (vsim-3722) C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/simulation/modelsim/testbench.v(24): [TFMPC] - Missing connection for port 'HEX0'.
+# ** Warning: (vsim-3722) C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/simulation/modelsim/testbench.v(24): [TFMPC] - Missing connection for port 'HEX1'.
+# ** Warning: (vsim-3722) C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/simulation/modelsim/testbench.v(24): [TFMPC] - Missing connection for port 'HEX2'.
+# ** Warning: (vsim-3722) C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/simulation/modelsim/testbench.v(24): [TFMPC] - Missing connection for port 'HEX3'.
+# ** Warning: (vsim-3722) C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/simulation/modelsim/testbench.v(24): [TFMPC] - Missing connection for port 'HEX4'.
+# ** Warning: (vsim-3722) C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/simulation/modelsim/testbench.v(24): [TFMPC] - Missing connection for port 'HEX5'.
+# ** Warning: (vsim-3722) C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/simulation/modelsim/testbench.v(24): [TFMPC] - Missing connection for port 'LEDR'.
+# ** Warning: (vsim-3722) C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/simulation/modelsim/testbench.v(24): [TFMPC] - Missing connection for port 'x'.
+# ** Warning: (vsim-3722) C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/simulation/modelsim/testbench.v(24): [TFMPC] - Missing connection for port 'y'.
+# ** Warning: (vsim-3722) C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/simulation/modelsim/testbench.v(24): [TFMPC] - Missing connection for port 'colour'.
+# ** Warning: (vsim-3722) C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/simulation/modelsim/testbench.v(24): [TFMPC] - Missing connection for port 'plot'.
+# ** Warning: (vsim-3722) C:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/simulation/modelsim/testbench.v(24): [TFMPC] - Missing connection for port 'vga_resetn'.
+run 150ns
+wave zoom full
+# {0 ps} {157500 ps}
+# End time: 02:04:07 on Oct 02,2026, Elapsed time: 0:07:33
+# Errors: 0, Warnings: 32

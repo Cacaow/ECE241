@@ -1,0 +1,90 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part1/simulation/modelsim
+vpart1
+!s110 1790916045
+!i10b 1
+!s100 jc69mY_mTo[hagzcB6LUn2
+IM7]:<Hn1e56b9H;E^cg>U3
+Z0 VDg1SIo80bB@j0V0VzS_@n1
+Z1 dC:/University/Year 2/ECE241/fake_fpga/LABS/LAB2/Part2/simulation/modelsim
+w1790745348
+Z2 8main.vo
+Z3 Fmain.vo
+Z4 L0 31
+Z5 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1790916045.000000
+!s107 main.vo|
+Z6 !s90 main.vo|
+!i113 1
+Z7 tCvgOpt 0
+vpart2
+Z8 !s110 1790916551
+!i10b 1
+!s100 KIijW`H0K:n^R9chbeElH3
+I<Vc`A=_oShZT?`UcEP]AZ2
+R0
+R1
+Z9 w1790916466
+R2
+R3
+R4
+R5
+r1
+!s85 0
+31
+Z10 !s108 1790916551.000000
+Z11 !s107 main.vo|
+R6
+!i113 1
+R7
+vseg7
+R8
+!i10b 1
+!s100 `=g2jXNBKUj3Qk2jAVc4F1
+IJ2`a9R7@J@^5hkMoWX`fk1
+R0
+R1
+R9
+R2
+R3
+L0 1569
+R5
+r1
+!s85 0
+31
+R10
+R11
+R6
+!i113 1
+R7
+vtb
+R8
+!i10b 1
+!s100 <_g]^oMj>jLV7<OWTV@z>1
+I3a_>:l?faFdHO1dHJh1Ra3
+R0
+R1
+w1790916041
+8tb.v
+Ftb.v
+L0 6
+R5
+r1
+!s85 0
+31
+R10
+!s107 tb.v|
+!s90 tb.v|
+!i113 1
+R7
