@@ -1,0 +1,53 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/University/Year 2/ECE241/fake_fpga/LABS/LAB3/Part1/simulation/modelsim
+vpart1
+!s110 1791827894
+!i10b 1
+!s100 ?A1bgBK9CbDCMZhT3Z5cJ2
+I]0EKCJLo>gk<Rln_h<?J@1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1791825459
+8C:/University/Year 2/ECE241/fake_fpga/LABS/LAB3/Part1/part1.v
+FC:/University/Year 2/ECE241/fake_fpga/LABS/LAB3/Part1/part1.v
+L0 4
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1791827894.000000
+!s107 C:/University/Year 2/ECE241/fake_fpga/LABS/LAB3/Part1/part1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/University/Year 2/ECE241/fake_fpga/LABS/LAB3/Part1|C:/University/Year 2/ECE241/fake_fpga/LABS/LAB3/Part1/part1.v|
+!i113 1
+o-vlog01compat -work work
+!s92 -vlog01compat -work work {+incdir+C:/University/Year 2/ECE241/fake_fpga/LABS/LAB3/Part1}
+Z3 tCvgOpt 0
+vtestbench
+!s110 1791828030
+!i10b 1
+!s100 0@<zR]Q6XMIY7h1@B=Dni2
+Izid]l_YEF^IWYcN:c?7zI2
+R1
+R0
+w1791822521
+8C:/University/Year 2/ECE241/fake_fpga/LABS/LAB3/Part1/simulation/modelsim/testbench.v
+FC:/University/Year 2/ECE241/fake_fpga/LABS/LAB3/Part1/simulation/modelsim/testbench.v
+L0 3
+R2
+r1
+!s85 0
+31
+!s108 1791828030.000000
+!s107 C:/University/Year 2/ECE241/fake_fpga/LABS/LAB3/Part1/simulation/modelsim/testbench.v|
+!s90 -reportprogress|300|-work|work|C:/University/Year 2/ECE241/fake_fpga/LABS/LAB3/Part1/simulation/modelsim/testbench.v|
+!i113 1
+o-work work
+R3

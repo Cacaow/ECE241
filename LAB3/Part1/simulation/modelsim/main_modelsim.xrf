@@ -1,0 +1,15 @@
+vendor_name = ModelSim
+source_file = 1, fake_fpga/u_of_t_scripts/compile_sim.tcl
+source_file = 1, ../u_of_t_scripts/compile_sim.tcl
+source_file = 1, C:/University/Year 2/ECE241/fake_fpga/LABS/LAB3/Part1/simulation/modelsim/testbench.v
+source_file = 1, C:/University/Year 2/ECE241/fake_fpga/LABS/LAB3/Part1/part1.v
+source_file = 1, C:/University/Year 2/ECE241/fake_fpga/LABS/LAB3/Part1/db/main.cbx.xml
+design_name = part1
+instance = comp, \Qa~output , Qa~output, part1, 1
+instance = comp, \Qb~output , Qb~output, part1, 1
+instance = comp, \S~input , S~input, part1, 1
+instance = comp, \Clk~input , Clk~input, part1, 1
+instance = comp, \R~input , R~input, part1, 1
+instance = comp, \Qa~1 , Qa~1, part1, 1
+instance = comp, \Qb~0 , Qb~0, part1, 1
+instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, part1, 1

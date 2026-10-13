@@ -1,0 +1,141 @@
+|part4
+CLOCK_50 => ~NO_FANOUT~
+SW[0] => D.IN3
+SW[1] => Clock.IN2
+KEY[0] => ~NO_FANOUT~
+KEY[1] => ~NO_FANOUT~
+KEY[2] => ~NO_FANOUT~
+KEY[3] => ~NO_FANOUT~
+HEX0[0] <= <GND>
+HEX0[1] <= <GND>
+HEX0[2] <= <GND>
+HEX0[3] <= <GND>
+HEX0[4] <= <GND>
+HEX0[5] <= <GND>
+HEX0[6] <= <GND>
+HEX1[0] <= <GND>
+HEX1[1] <= <GND>
+HEX1[2] <= <GND>
+HEX1[3] <= <GND>
+HEX1[4] <= <GND>
+HEX1[5] <= <GND>
+HEX1[6] <= <GND>
+HEX2[0] <= <GND>
+HEX2[1] <= <GND>
+HEX2[2] <= <GND>
+HEX2[3] <= <GND>
+HEX2[4] <= <GND>
+HEX2[5] <= <GND>
+HEX2[6] <= <GND>
+HEX3[0] <= <GND>
+HEX3[1] <= <GND>
+HEX3[2] <= <GND>
+HEX3[3] <= <GND>
+HEX3[4] <= <GND>
+HEX3[5] <= <GND>
+HEX3[6] <= <GND>
+HEX4[0] <= <GND>
+HEX4[1] <= <GND>
+HEX4[2] <= <GND>
+HEX4[3] <= <GND>
+HEX4[4] <= <GND>
+HEX4[5] <= <GND>
+HEX4[6] <= <GND>
+HEX5[0] <= <GND>
+HEX5[1] <= <GND>
+HEX5[2] <= <GND>
+HEX5[3] <= <GND>
+HEX5[4] <= <GND>
+HEX5[5] <= <GND>
+HEX5[6] <= <GND>
+LEDR[0] <= D_latch:A.Qa
+LEDR[1] <= posD_latch:B.Qa
+LEDR[2] <= negD_latch:C.Qa
+LEDR[3] <= <GND>
+LEDR[4] <= <GND>
+LEDR[5] <= <GND>
+LEDR[6] <= <GND>
+LEDR[7] <= <GND>
+LEDR[8] <= <GND>
+LEDR[9] <= <GND>
+x[0] <= <GND>
+x[1] <= <GND>
+x[2] <= <GND>
+x[3] <= <GND>
+x[4] <= <GND>
+x[5] <= <GND>
+x[6] <= <GND>
+x[7] <= <GND>
+y[0] <= <GND>
+y[1] <= <GND>
+y[2] <= <GND>
+y[3] <= <GND>
+y[4] <= <GND>
+y[5] <= <GND>
+y[6] <= <GND>
+colour[0] <= <GND>
+colour[1] <= <GND>
+colour[2] <= <GND>
+plot <= <GND>
+vga_resetn <= <GND>
+
+
+|part4|D_latch:A
+D => S_g.IN0
+D => R_g.IN0
+Clk => R_g.IN1
+Clk => S_g.IN1
+Qa <= Qa.DB_MAX_OUTPUT_PORT_TYPE
+Qb <= Qb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|posD_latch:B
+D => D.IN1
+Clk => Clk.IN1
+Qa <= D_latch:slave.Qa
+Qb <= D_latch:slave.Qb
+
+
+|part4|posD_latch:B|D_latch:master
+D => S_g.IN0
+D => R_g.IN0
+Clk => R_g.IN1
+Clk => S_g.IN1
+Qa <= Qa.DB_MAX_OUTPUT_PORT_TYPE
+Qb <= Qb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|posD_latch:B|D_latch:slave
+D => S_g.IN0
+D => R_g.IN0
+Clk => R_g.IN1
+Clk => S_g.IN1
+Qa <= Qa.DB_MAX_OUTPUT_PORT_TYPE
+Qb <= Qb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|negD_latch:C
+D => D.IN1
+Clk => Clk.IN1
+Qa <= D_latch:slave.Qa
+Qb <= D_latch:slave.Qb
+
+
+|part4|negD_latch:C|D_latch:master
+D => S_g.IN0
+D => R_g.IN0
+Clk => R_g.IN1
+Clk => S_g.IN1
+Qa <= Qa.DB_MAX_OUTPUT_PORT_TYPE
+Qb <= Qb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|negD_latch:C|D_latch:slave
+D => S_g.IN0
+D => R_g.IN0
+Clk => R_g.IN1
+Clk => S_g.IN1
+Qa <= Qa.DB_MAX_OUTPUT_PORT_TYPE
+Qb <= Qb.DB_MAX_OUTPUT_PORT_TYPE
+
+
