@@ -1,0 +1,392 @@
+Analysis & Synthesis report for main
+Sun Nov 01 01:46:40 2026
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Post-Synthesis Netlist Statistics for Top Partition
+ 11. Elapsed Time Per Partition
+ 12. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Sun Nov 01 01:46:40 2026       ;
+; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                   ; main                                        ;
+; Top-level Entity Name           ; part3                                       ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 30                                          ;
+; Total pins                      ; 84                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
+; Top-level entity name                                                           ; part3              ; main               ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 24          ;
+; Maximum allowed            ; 16          ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 16          ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-16        ;   0.0%      ;
++----------------------------+-------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                  ; Library ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------------+---------+
+; part3.v                          ; yes             ; User Verilog HDL File  ; C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v ;         ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------------+---------+
+
+
++----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary              ;
++---------------------------------------------+------------+
+; Resource                                    ; Usage      ;
++---------------------------------------------+------------+
+; Estimate of Logic utilization (ALMs needed) ; 24         ;
+;                                             ;            ;
+; Combinational ALUT usage for logic          ; 43         ;
+;     -- 7 input functions                    ; 0          ;
+;     -- 6 input functions                    ; 5          ;
+;     -- 5 input functions                    ; 2          ;
+;     -- 4 input functions                    ; 8          ;
+;     -- <=3 input functions                  ; 28         ;
+;                                             ;            ;
+; Dedicated logic registers                   ; 30         ;
+;                                             ;            ;
+; I/O pins                                    ; 84         ;
+;                                             ;            ;
+; Total DSP Blocks                            ; 0          ;
+;                                             ;            ;
+; Maximum fan-out node                        ; digit[0]~1 ;
+; Maximum fan-out                             ; 30         ;
+; Total fan-out                               ; 308        ;
+; Average fan-out                             ; 1.28       ;
++---------------------------------------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                    ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
+; |part3                     ; 43 (36)             ; 30 (30)                   ; 0                 ; 0          ; 84   ; 0            ; |part3              ; part3       ; work         ;
+;    |hex7seg:h0|            ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |part3|hex7seg:h0   ; hex7seg     ; work         ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 30    ;
+; Number of registers using Synchronous Clear  ; 26    ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 4     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; 3:1                ; 26 bits   ; 52 LEs        ; 0 LEs                ; 52 LEs                 ; Yes        ; |part3|slow_count[0]       ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |part3|digit[0]            ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 30                          ;
+;     ENA               ; 4                           ;
+;     SCLR              ; 26                          ;
+; arriav_lcell_comb     ; 45                          ;
+;     arith             ; 26                          ;
+;         1 data inputs ; 26                          ;
+;     normal            ; 19                          ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 2                           ;
+;         4 data inputs ; 8                           ;
+;         5 data inputs ; 2                           ;
+;         6 data inputs ; 5                           ;
+; boundary_port         ; 84                          ;
+;                       ;                             ;
+; Max LUT depth         ; 3.50                        ;
+; Average LUT depth     ; 2.40                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Sun Nov 01 01:46:33 2026
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off main -c main
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 16 of the 24 processors detected
+Info (12021): Found 2 design units, including 2 entities, in source file part3.v
+    Info (12023): Found entity 1: part3 File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 4
+    Info (12023): Found entity 2: hex7seg File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 61
+Info (12127): Elaborating entity "part3" for the top level hierarchy
+Warning (10034): Output port "HEX1" at part3.v(9) has no driver File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 9
+Warning (10034): Output port "HEX2" at part3.v(10) has no driver File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 10
+Warning (10034): Output port "HEX3" at part3.v(11) has no driver File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 11
+Warning (10034): Output port "HEX4" at part3.v(12) has no driver File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 12
+Warning (10034): Output port "HEX5" at part3.v(13) has no driver File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 13
+Warning (10034): Output port "LEDR" at part3.v(14) has no driver File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 14
+Warning (10034): Output port "x" at part3.v(15) has no driver File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 15
+Warning (10034): Output port "y" at part3.v(16) has no driver File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 16
+Warning (10034): Output port "colour" at part3.v(17) has no driver File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 17
+Warning (10034): Output port "plot" at part3.v(18) has no driver File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 18
+Warning (10034): Output port "vga_resetn" at part3.v(20) has no driver File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 20
+Info (12128): Elaborating entity "hex7seg" for hierarchy "hex7seg:h0" File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 56
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "HEX1[0]" is stuck at GND File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 9
+    Warning (13410): Pin "HEX1[1]" is stuck at GND File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 9
+    Warning (13410): Pin "HEX1[2]" is stuck at GND File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 9
+    Warning (13410): Pin "HEX1[3]" is stuck at GND File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 9
+    Warning (13410): Pin "HEX1[4]" is stuck at GND File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 9
+    Warning (13410): Pin "HEX1[5]" is stuck at GND File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 9
+    Warning (13410): Pin "HEX1[6]" is stuck at GND File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 9
+    Warning (13410): Pin "HEX2[0]" is stuck at GND File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 10
+    Warning (13410): Pin "HEX2[1]" is stuck at GND File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 10
+    Warning (13410): Pin "HEX2[2]" is stuck at GND File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 10
+    Warning (13410): Pin "HEX2[3]" is stuck at GND File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 10
+    Warning (13410): Pin "HEX2[4]" is stuck at GND File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 10
+    Warning (13410): Pin "HEX2[5]" is stuck at GND File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 10
+    Warning (13410): Pin "HEX2[6]" is stuck at GND File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 10
+    Warning (13410): Pin "HEX3[0]" is stuck at GND File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 11
+    Warning (13410): Pin "HEX3[1]" is stuck at GND File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 11
+    Warning (13410): Pin "HEX3[2]" is stuck at GND File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 11
+    Warning (13410): Pin "HEX3[3]" is stuck at GND File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 11
+    Warning (13410): Pin "HEX3[4]" is stuck at GND File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 11
+    Warning (13410): Pin "HEX3[5]" is stuck at GND File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 11
+    Warning (13410): Pin "HEX3[6]" is stuck at GND File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 11
+    Warning (13410): Pin "HEX4[0]" is stuck at GND File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 12
+    Warning (13410): Pin "HEX4[1]" is stuck at GND File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 12
+    Warning (13410): Pin "HEX4[2]" is stuck at GND File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 12
+    Warning (13410): Pin "HEX4[3]" is stuck at GND File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 12
+    Warning (13410): Pin "HEX4[4]" is stuck at GND File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 12
+    Warning (13410): Pin "HEX4[5]" is stuck at GND File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 12
+    Warning (13410): Pin "HEX4[6]" is stuck at GND File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 12
+    Warning (13410): Pin "HEX5[0]" is stuck at GND File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 13
+    Warning (13410): Pin "HEX5[1]" is stuck at GND File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 13
+    Warning (13410): Pin "HEX5[2]" is stuck at GND File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 13
+    Warning (13410): Pin "HEX5[3]" is stuck at GND File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 13
+    Warning (13410): Pin "HEX5[4]" is stuck at GND File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 13
+    Warning (13410): Pin "HEX5[5]" is stuck at GND File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 13
+    Warning (13410): Pin "HEX5[6]" is stuck at GND File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 13
+    Warning (13410): Pin "LEDR[0]" is stuck at GND File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 14
+    Warning (13410): Pin "LEDR[1]" is stuck at GND File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 14
+    Warning (13410): Pin "LEDR[2]" is stuck at GND File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 14
+    Warning (13410): Pin "LEDR[3]" is stuck at GND File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 14
+    Warning (13410): Pin "LEDR[4]" is stuck at GND File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 14
+    Warning (13410): Pin "LEDR[5]" is stuck at GND File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 14
+    Warning (13410): Pin "LEDR[6]" is stuck at GND File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 14
+    Warning (13410): Pin "LEDR[7]" is stuck at GND File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 14
+    Warning (13410): Pin "LEDR[8]" is stuck at GND File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 14
+    Warning (13410): Pin "LEDR[9]" is stuck at GND File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 14
+    Warning (13410): Pin "x[0]" is stuck at GND File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 15
+    Warning (13410): Pin "x[1]" is stuck at GND File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 15
+    Warning (13410): Pin "x[2]" is stuck at GND File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 15
+    Warning (13410): Pin "x[3]" is stuck at GND File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 15
+    Warning (13410): Pin "x[4]" is stuck at GND File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 15
+    Warning (13410): Pin "x[5]" is stuck at GND File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 15
+    Warning (13410): Pin "x[6]" is stuck at GND File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 15
+    Warning (13410): Pin "x[7]" is stuck at GND File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 15
+    Warning (13410): Pin "y[0]" is stuck at GND File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 16
+    Warning (13410): Pin "y[1]" is stuck at GND File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 16
+    Warning (13410): Pin "y[2]" is stuck at GND File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 16
+    Warning (13410): Pin "y[3]" is stuck at GND File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 16
+    Warning (13410): Pin "y[4]" is stuck at GND File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 16
+    Warning (13410): Pin "y[5]" is stuck at GND File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 16
+    Warning (13410): Pin "y[6]" is stuck at GND File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 16
+    Warning (13410): Pin "colour[0]" is stuck at GND File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 17
+    Warning (13410): Pin "colour[1]" is stuck at GND File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 17
+    Warning (13410): Pin "colour[2]" is stuck at GND File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 17
+    Warning (13410): Pin "plot" is stuck at GND File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 18
+    Warning (13410): Pin "vga_resetn" is stuck at GND File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 20
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 10 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "SW[0]" File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 6
+    Warning (15610): No output dependent on input pin "SW[1]" File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 6
+    Warning (15610): No output dependent on input pin "SW[2]" File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 6
+    Warning (15610): No output dependent on input pin "SW[3]" File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 6
+    Warning (15610): No output dependent on input pin "SW[4]" File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 6
+    Warning (15610): No output dependent on input pin "SW[5]" File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 6
+    Warning (15610): No output dependent on input pin "SW[6]" File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 6
+    Warning (15610): No output dependent on input pin "SW[7]" File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 6
+    Warning (15610): No output dependent on input pin "SW[8]" File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 6
+    Warning (15610): No output dependent on input pin "SW[9]" File: C:/University/Year 2/ECE241/fake_fpga/LABS/LAB4/Part3/part3.v Line: 6
+Info (21057): Implemented 127 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 12 input pins
+    Info (21059): Implemented 72 output pins
+    Info (21061): Implemented 43 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 89 warnings
+    Info: Peak virtual memory: 4869 megabytes
+    Info: Processing ended: Sun Nov 01 01:46:40 2026
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:14
+
+
